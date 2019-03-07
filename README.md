@@ -1,0 +1,38 @@
+## Specs
+
+- The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels
+  - **Example Input**: 3
+  - **Example Output**: 3
+- The program recognizes all words regardless of capitalization.
+  - **Example Input**: HELLO
+  - **Example Input**: HELLO
+- The program adds "ay" to single-letter words beginning with a vowel.
+  - **Example Input**: i
+  - **Example Output**: iay
+- The program adds "ay" to multi-letter words beginning with a vowel.
+  - **Example Input**: apple
+  - **Example Output**: appleay
+- The program moves the first consonant to the end of a single word beginning with 1 consonant.
+  - **Example Input**: hat
+  - **Example Output**: ath
+- The program moves the first 2 consonants to the end of a single word beginning with 2 consonants.
+  - **Example Input**: that
+  - **Example Output**: atth
+- The program moves all consonants at the beginning of a single word to the end of the word, beginning with multiply consonants.
+  - **Example Input**: christian
+  - **Example Output**: istianchr
+- The program moves all consonants at the beginning of all words beginning with multiply consonants to the end of each word in a multiple-word sentence.
+  - **Example Input**: christian christmas
+  - **Example Output**: istianchr istmaschr
+- The program moves all consonants at the beginning of all words beginning with multiply consonants to the end of each word and adds "ay" in a multiple-word sentence.
+  - **Example Input**: christian christmas
+  - **Example Output**: istianchray istmaschray
+- The program recognizes a word beginning with "qu" as a consonant and moves both to the end of the word and adds "ay".
+  - **Example Input**: quilt
+  - **Example Input**: iltquay
+- The program recognizes a multiple word sentence with words beginning with "qu" as consonants and moves all "qu" to the end of each word and adds "ay" to each word.
+  - **Example Input**:  quilted quills
+  - **Example Output**: iltedquay illsquay  
+- The program recognizes a word beginning with "y" as a consonant and moves it to the end of the word and adds "ay".
+  - **Example Input**: yellow
+  - **Example Output**: ellowyay
